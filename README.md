@@ -1,2 +1,2 @@
-# https://jessikraujjo.github.io/mysite/
+# https://jessikraujjo.github.io/
 My Personal WebSite
