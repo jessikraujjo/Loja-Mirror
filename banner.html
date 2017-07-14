@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Ola</title>
+</head>
+<script >
+	ban = new Array(2);
+    ban[0] = "img/t1.png";
+    ban[1] = "img/t2.png";
+    var bannerAtual = 0;
+    var timer = setInterval(banner, 4000);
+    var controle = document.querySelector('.pause');
+    function banner(){
+		bannerAtual++;
+		bannerAtual = bannerAtual%2;
+		document.banner.src = ban[bannerAtual];
+		
+	}
+    controle.onclick = function(){
+    	if(controle.className == 'pause'){
+    		clearInterval(timer);
+    		controle.className = 'play';
+    	}else{
+    		timer = setInterval(banner, 4000);
+    		controle.className = 'pause';
+    	}
+    	return false;
+    };
+    
+ </script>
+<body onLoad="banner()">
+	<img src="" name="banner" style="width: 70%;margin: 5px;">
+		
+	<button type="submit" ><a href="#" class="pause"></a>Controle</button>
+   <!-- <form action="http://www.google.com.br/search" id="form-busca">
+		<input type="search" name="q" id="q">
+	</form>-->
+	
+
+</body>
+
+</html>
+
