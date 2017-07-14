@@ -1,2 +1,2 @@
-# jessikraujjo/mirror/index.php
+# http://jessikraujjo.github.io/mirror/
 Curso PHP Caelum
